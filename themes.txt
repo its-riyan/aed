@@ -3,4 +3,9 @@ theme components
 npm@landkit
 https://landkit.goodthemes.co/docs/index.html
 
+login /admin
+u isabelle@isabelle.com
+p 123456
+
+
 
