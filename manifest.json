@@ -1,0 +1,32 @@
+{
+    "dir": "ltr",
+    "name": "AED",
+    "description": "Distributor ZOLL AED.",
+    "short_name": "AED",
+    "icons": [
+        {
+            "src": "/",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "scope": "/",
+    "start_url": "https://www.aed.co.id",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "url": "https://www.aed.co.id",
+    "lang": "ID",
+    "screenshots": []
+}

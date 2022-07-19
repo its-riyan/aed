@@ -1,0 +1,58 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+      
+          <!-- Brand -->
+          <a class="navbar-brand" href="#">
+            <img src="<?php echo base_url();?>@static/codeigniter.svg" class="navbar-brand-img" alt=""> <img src="#" class="navbar-brand-img" alt="">
+          </a>
+      
+          <!-- Toggler -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+      
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fe fe-x"></i>
+            </button>
+      
+            <!-- Navigation -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                    Page Load in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CI Version <strong>' . CI_VERSION . '</strong>' : '' ?>
+              </li>
+            </ul>
+      
+          </div>
+      
+        </div>
+    </nav>
+  
+    <!-- BREADCRUMB -->
+    <nav class="bg-gray-200">
+      <div class="container">
+          <div class="row">
+          <div class="col-12">
+
+              <!-- Breadcrumb -->
+              <ol class="breadcrumb breadcrumb-scroll">
+              <li class="breadcrumb-item">
+                  <a href="<?php echo lang_base_url(); ?>" class="text-gray-700">
+                  Home
+                  </a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                  Playground
+              </li>
+              </ol>
+
+          </div>
+          </div> <!-- / .row -->
+      </div> 
+    </nav>

@@ -1,0 +1,54 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');?>
+
+    <section>
+        <div class="container d-flex flex-column">
+          <div class="row align-items-center justify-content-center gx-0 min-vh-100">
+            <div class="col-12 col-md-5 col-lg-4 order-md-1 mb-auto mb-md-0 pb-8 py-md-11">
+  
+            <!-- Heading -->
+            <h1 class="mb-0 fw-bold text-center">
+            Login
+            </h1>
+
+            <!-- Text -->
+            <p class="mb-6 text-center text-muted">
+            Lorem ipsum consectetur adipisicing elit.
+            </p>
+  
+            <!-- Form -->
+            <?php echo form_open('auth_controller/admin_login_post'); ?>
+              
+            <?php $this->load->view('AUTH/__response.html'); ?>
+            <!-- Email -->
+            <div class="form-group">
+                <label class="form-label" for="email">
+                Email Address
+                </label>
+                <input type="email" name="email" class="form-control" placeholder="@" value="<?php echo old('email'); ?>" required>
+            </div>
+
+            <!-- Password -->
+            <div class="form-group mb-5">
+                <label class="form-label" for="password">
+                Password
+                </label>
+                <input type="password" name="password" class="form-control" placeholder="password" value="<?php echo old('password'); ?>" required>
+            </div>
+
+            <!-- Submit -->
+            <button class="btn w-100 btn-primary" type="submit">
+                Submit
+            </button>
+  
+            <?php echo form_close(); ?>
+  
+            <!-- Text -->
+            <p class="mb-0 fs-sm text-center text-muted">
+            Back to home? <a href="<?php echo lang_base_url(); ?>">Home</a>.
+            </p>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
